@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Élan – Luxury Perfumes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="navbar" data-aos="fade-down">
+        <div class="logo">Élan</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+            <div class="cart-container">
+                <button id="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="zoom-in">
+        <div class="hero-content">
+            <h1>Where Fragrance Meets Elegance</h1>
+            <p>Discover the timeless essence of handcrafted luxury perfumes.</p>
+            <a href="#" class="btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" data-aos="fade-up">
+        <h2>Signature Scents</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-aos="flip-left">
+                <img src="images/perfume1.jpg" alt="Oud Mystique" class="perfume-img" />
+                <h3>Oud Mystique</h3>
+                <p>$120</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card" data-aos="flip-left">
+                <img src="images/perfume2.jpg" alt="Rose Elixir" class="perfume-img" />
+                <h3>Rose Elixir</h3>
+                <p>$95</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card" data-aos="flip-left">
+                <img src="images/perfume1.jpg" alt="Amber Noire" class="perfume-img" />
+                <h3>Amber Noire</h3>
+                <p>$110</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" data-aos="fade-up">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <blockquote>“A scent so rich and captivating – truly luxurious.”<span>– Sophia M.</span></blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>“Elegance in a bottle. My favorite fragrance ever.”<span>– Liam R.</span></blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>“Got it as a gift and now I’m obsessed. 10/10.”<span>– Ayesha K.</span></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter" data-aos="fade-up">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe to receive updates on new arrivals, exclusive offers, and more.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart" class="btn-clear">Clear Cart</button>
+            <p id="cart-total" class="mt-2 font-semibold">Total: $0</p>
+            <p id="cart-empty">Your cart is empty.</p>
+            <button id="close-cart" class="btn-secondary">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Élan Perfumes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
